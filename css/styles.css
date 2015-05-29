@@ -75,3 +75,16 @@ img {
   border:2px solid slategray;
   border-radius: 500px;
 }
+
+aside {
+  display: none;
+  padding-left: 30em;
+}
+
+button {
+  padding:5px 15px;
+  background:#ccc;
+  border:0 none;
+  border-radius: 1em;
+  color: black;
+}
