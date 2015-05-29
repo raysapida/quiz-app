@@ -63,6 +63,21 @@ $(document).ready(function() {
     }
   });
 
+  $( " #question-5 form" ).submit(function( event ) {
+    event.preventDefault();
+    $("#c-next").unbind("click");
+    $("#w-next").unbind("click");
+    var input = $('input[name=q5]:checked', '#question-5').val();
+    $("#question-5").css("display", "none");
+    if (input == 'beach') {
+      $("#correct").css("display", "block");
+      correctNext("#score");
+    } else {
+      $("#wrong").css("display", "block");
+      wrongNext("#score");
+    }
+  });
+
   function correctNext(question) {
     $("#c-next").click(function() {
       $("aside").css("display", "none");
