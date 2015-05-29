@@ -33,6 +33,21 @@ $(document).ready(function() {
     }
   });
 
+  $( " #question-3 form" ).submit(function( event ) {
+    event.preventDefault();
+    $("#c-next").unbind("click");
+    $("#w-next").unbind("click");
+    var input = $('input[name=q3]:checked', '#question-3').val();
+    $("#question-3").css("display", "none");
+    if (input == 'ncis') {
+      $("#correct").css("display", "block");
+      correctNext("#question-4");
+    } else {
+      $("#wrong").css("display", "block");
+      wrongNext("#question-4");
+    }
+  });
+
   function correctNext(question) {
     $("#c-next").click(function() {
       $("aside").css("display", "none");
