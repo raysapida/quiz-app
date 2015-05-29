@@ -48,6 +48,21 @@ $(document).ready(function() {
     }
   });
 
+  $( " #question-4 form" ).submit(function( event ) {
+    event.preventDefault();
+    $("#c-next").unbind("click");
+    $("#w-next").unbind("click");
+    var input = $('input[name=q4]:checked', '#question-4').val();
+    $("#question-4").css("display", "none");
+    if (input == 'kitty') {
+      $("#correct").css("display", "block");
+      correctNext("#question-5");
+    } else {
+      $("#wrong").css("display", "block");
+      wrongNext("#question-5");
+    }
+  });
+
   function correctNext(question) {
     $("#c-next").click(function() {
       $("aside").css("display", "none");
