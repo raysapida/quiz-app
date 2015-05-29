@@ -11,6 +11,11 @@
   font-family: 'Alegreya', serif;
   font-weight: 700;
   font-size: 3em;
+  color: white;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 html {
@@ -41,11 +46,31 @@ html {
 
 div{
   float: left;
-  padding-left: 10em;
+  padding-left: 20em;
+}
+
+div h2, form {
+  color: white;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+}
+
+input[type=submit] {
+  padding:5px 15px;
+  background:#ccc;
+  border:0 none;
+  border-radius: 1em;
+  color: black;
 }
 
 ul {
   list-style: none;
   float: right;
-  padding-right: 5em;
+  padding-right: 10em;
+}
+
+img {
+  border:2px solid slategray;
+  border-radius: 500px;
 }
