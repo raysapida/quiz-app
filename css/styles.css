@@ -82,6 +82,7 @@ img {
 
 aside {
   display: none;
+  float: left;
   padding-left: 30em;
 }
 
