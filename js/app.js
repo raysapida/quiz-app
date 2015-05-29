@@ -90,7 +90,7 @@ $(document).ready(function() {
     }
   });
 
-  function correcTally(score) {
+  function correctTally(score) {
     $("#c-next").click(function() {
       $("aside").css("display", "none");
       $("#score").css("display", "block");
