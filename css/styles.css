@@ -8,6 +8,9 @@
 }
 #home h1 {
   text-align: center;
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  font-size: 3em;
 }
 
 html {
@@ -17,6 +20,7 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #question-2 {
