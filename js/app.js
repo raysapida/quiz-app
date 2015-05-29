@@ -11,10 +11,10 @@ $(document).ready(function() {
     $("#question-1").css("display", "none");
     if (input == 'star') {
       $("#correct").css("display", "block");
-      correctNext("#question-2");
+      correctNext("question-2");
     } else {
       $("#wrong").css("display", "block");
-      wrongNext("#question-2");
+      wrongNext("question-2");
     }
   });
 
@@ -26,10 +26,10 @@ $(document).ready(function() {
     $("#question-2").css("display", "none");
     if (input == 'grease') {
       $("#correct").css("display", "block");
-      correctNext("#question-3");
+      correctNext("question-3");
     } else {
       $("#wrong").css("display", "block");
-      wrongNext("#question-3");
+      wrongNext("question-3");
     }
   });
 
@@ -41,10 +41,10 @@ $(document).ready(function() {
     $("#question-3").css("display", "none");
     if (input == 'ncis') {
       $("#correct").css("display", "block");
-      correctNext("#question-4");
+      correctNext("question-4");
     } else {
       $("#wrong").css("display", "block");
-      wrongNext("#question-4");
+      wrongNext("question-4");
     }
   });
 
@@ -56,10 +56,10 @@ $(document).ready(function() {
     $("#question-4").css("display", "none");
     if (input == 'kitty') {
       $("#correct").css("display", "block");
-      correctNext("#question-5");
+      correctNext("question-5");
     } else {
       $("#wrong").css("display", "block");
-      wrongNext("#question-5");
+      wrongNext("question-5");
     }
   });
 
@@ -81,14 +81,16 @@ $(document).ready(function() {
   function correctNext(question) {
     $("#c-next").click(function() {
       $("aside").css("display", "none");
-      $(question).css("display", "block");
+      $("#"+question).css("display", "block");
+      $("html").css("background-image", "url('../images/"+question+".jpg')");
     });
   }
 
   function wrongNext(question) {
     $("#w-next").click(function() {
       $("aside").css("display", "none");
-      $(question).css("display", "block");
+      $("#"+question).css("display", "block");
+      $("html").css("background-image", "url('../images/"+question+".jpg')");
     });
   }
 });
