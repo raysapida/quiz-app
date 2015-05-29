@@ -28,6 +28,10 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+#question-1 {
+  display: none;
+}
+
 #question-2 {
   display: none;
 }
@@ -49,7 +53,7 @@ div{
   padding-left: 20em;
 }
 
-div h2, form {
+div h2,p, form {
   color: white;
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.5);
