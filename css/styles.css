@@ -1,0 +1,47 @@
+#home {
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+#home img {
+  float: left;
+}
+#home h1 {
+  text-align: center;
+}
+
+html {
+  background: url('../images/question-1.jpg');
+  background-size: cover;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#question-2 {
+  display: none;
+}
+
+#question-3 {
+  display: none;
+}
+
+#question-4 {
+  display: none;
+}
+
+#question-5 {
+  display: none;
+}
+
+div{
+  float: left;
+  padding-left: 10em;
+}
+
+ul {
+  list-style: none;
+  float: right;
+  padding-right: 5em;
+}
