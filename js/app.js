@@ -13,6 +13,7 @@ $(document).ready(function() {
     $("#question-1").css("display", "none");
     if (input == 'star') {
       $("#correct").css("display", "block");
+      $("img#q1-icon").css("opacity", "1.0");
       score +=1;
       correctNext("question-2");
     } else {
@@ -29,6 +30,7 @@ $(document).ready(function() {
     $("#question-2").css("display", "none");
     if (input == 'grease') {
       $("#correct").css("display", "block");
+      $("img#q2-icon").css("opacity", "1.0");
       score +=1;
       correctNext("question-3");
     } else {
@@ -45,6 +47,7 @@ $(document).ready(function() {
     $("#question-3").css("display", "none");
     if (input == 'ncis') {
       $("#correct").css("display", "block");
+      $("img#q3-icon").css("opacity", "1.0");
       score +=1;
       correctNext("question-4");
     } else {
@@ -61,6 +64,7 @@ $(document).ready(function() {
     $("#question-4").css("display", "none");
     if (input == 'kitty') {
       $("#correct").css("display", "block");
+      $("img#q4-icon").css("opacity", "1.0");
       score +=1;
       correctNext("question-5");
     } else {
@@ -77,6 +81,7 @@ $(document).ready(function() {
     $("#question-5").css("display", "none");
     if (input == 'beach') {
       $("#correct").css("display", "block");
+      $("img#q5-icon").css("opacity", "1.0");
       score +=1;
       correctTally(score);
     } else {

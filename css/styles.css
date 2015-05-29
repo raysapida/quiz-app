@@ -72,7 +72,10 @@ ul {
   list-style: none;
   float: right;
   padding-right: 10em;
-  opacity: 0.8;
+}
+
+li img {
+  opacity: 0.25;
 }
 
 img {
