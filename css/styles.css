@@ -48,7 +48,8 @@ html {
   display: none;
 }
 
-div{
+div {
+  display: inline-block;
   float: left;
   padding-left: 20em;
 }
