@@ -1,5 +1,22 @@
 $(document).ready(function() {
   var score = 0;
+  var question1 = createQuestion("Where does the phrase 'dog days of summer' come from ?",
+                                 "Lazy dogs", "A reference", "A term coined from a famous novel", "A star",
+  "A star");
+  var question2 = createQuestion("Which movie is the popular song 'Summer Nights' from?",
+                                 "Hairspray", "Grease", "The Sound of Music", "West Side Story",
+  "Grease");
+  var question3 = createQuestion("Which of these TV series does Summer Glau not appear in?",
+                                 "Firefly", "The Big Bang Theory", "NCIS", "Arrow",
+  "NCIS");
+  var question4 = createQuestion("Buffy Summers from Buffy the Vampire Slayer is inspired by which X-Men character?",
+                                 "Jean Grey", "Rogue", "Kitty Pryde", "Jubilee",
+  "Kitty Pryde");
+  var question5 = createQuestion("The song 'Summertime' by DJ Jazzy Jeff & The Fresh Prince did not mention doing what?",
+                                 "Playing basketball", "Spending time on the beach", "Going to the mall",
+  "Having a BBQ", "Spending time on teh beach");
+
+  var questionList = [question1, question2, question3, question4, question5];
 
   $("#start").click(function() {
     $("#starting-message").css("display", "none");
@@ -119,5 +136,15 @@ $(document).ready(function() {
       $("aside").css("display", "none");
       $("#"+question).css("display", "block");
     });
+  }
+
+  function createQuestion(question, a, b, c, d, answer) {
+    this.question = question;
+    this.a = a;
+    this.b = b;
+    this.c = c;
+    this.d = d;
+    this.answer = answer;
+    return this;
   }
 });
