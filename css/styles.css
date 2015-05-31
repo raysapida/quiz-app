@@ -28,6 +28,10 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+section {
+  width: 70%;
+}
+
 #question-1 {
   display: none;
 }
