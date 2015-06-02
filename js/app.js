@@ -26,6 +26,7 @@ $(document).ready(function() {
   $("#start").click(function() {
     $("#starting-message").css("display", "none");
     $("#question-1").css("display", "inline-block");
+    $("html").css("background-image", "url('/quiz-app/images/question-1.jpg')");
   });
 
   $( " #question-1 form" ).submit(function( event ) {
@@ -133,6 +134,7 @@ $(document).ready(function() {
     $("#c-next").click(function() {
       $("aside").css("display", "none");
       $("#"+question).css("display", "block");
+      $("html").css("background-image", "url('/quiz-app/images/"+question+".jpg')");
     });
   }
 
@@ -140,6 +142,7 @@ $(document).ready(function() {
     $("#w-next").click(function() {
       $("aside").css("display", "none");
       $("#"+question).css("display", "block");
+      $("html").css("background-image", "url('/quiz-app/images/"+question+".jpg')");
     });
   }
 
