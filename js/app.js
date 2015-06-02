@@ -116,7 +116,7 @@ $(document).ready(function() {
       $("aside").css("display", "none");
       $("#score").css("display", "block");
       $("#score h1").append("<span>"+score+"</span>");
-      $("html").css("background-image", "url('../images/score-of-"+score+".jpg')");
+      $("html").css("background-image", "url('/images/score-of-"+score+".jpg')");
     });
   }
 
@@ -125,7 +125,7 @@ $(document).ready(function() {
       $("aside").css("display", "none");
       $("#score").css("display", "block");
       $("#score h1").append("<span>"+score+"</span>");
-      $("html").css("background-image", "url('../images/score-of-"+score+".jpg')");
+      $("html").css("background-image", "url('/images/score-of-"+score+".jpg')");
     });
   }
 
