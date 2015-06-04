@@ -46,8 +46,7 @@ $(document).ready(function() {
 
   $( " #question-2 form" ).submit(function( event ) {
     event.preventDefault();
-    $("#c-next").unbind("click");
-    $("#w-next").unbind("click");
+    unbindResults();
     var input = $('input[name=q2]:checked', '#question-2').val();
     $("#question-2").css("display", "none");
     if (input == question2.answer) {
@@ -63,8 +62,7 @@ $(document).ready(function() {
 
   $( " #question-3 form" ).submit(function( event ) {
     event.preventDefault();
-    $("#c-next").unbind("click");
-    $("#w-next").unbind("click");
+    unbindResults();
     var input = $('input[name=q3]:checked', '#question-3').val();
     $("#question-3").css("display", "none");
     if (input == question3.answer) {
@@ -80,8 +78,7 @@ $(document).ready(function() {
 
   $( " #question-4 form" ).submit(function( event ) {
     event.preventDefault();
-    $("#c-next").unbind("click");
-    $("#w-next").unbind("click");
+    unbindResults();
     var input = $('input[name=q4]:checked', '#question-4').val();
     $("#question-4").css("display", "none");
     if (input == question4.answer) {
@@ -97,8 +94,7 @@ $(document).ready(function() {
 
   $( " #question-5 form" ).submit(function( event ) {
     event.preventDefault();
-    $("#c-next").unbind("click");
-    $("#w-next").unbind("click");
+    unbindResults();
     var input = $('input[name=q5]:checked', '#question-5').val();
     $("#question-5").css("display", "none");
     if (input == question5.answer) {
@@ -144,6 +140,11 @@ $(document).ready(function() {
       $("#"+question).css("display", "block");
       $("html").css("background-image", "url('/quiz-app/images/"+question+".jpg')");
     });
+  }
+
+  function unbindResults() {
+    $("#c-next").unbind("click");
+    $("#w-next").unbind("click");
   }
 
   function createQuestion(id, question, a, b, c, d, answer) {
